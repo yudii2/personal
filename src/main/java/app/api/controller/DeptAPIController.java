@@ -22,6 +22,10 @@ public class DeptAPIController {
 	
 	private final DeptService deptService;
 	
+	@GetMapping("/git")
+	public String git() {
+		return "hello git";
+	}
 	
 	@GetMapping("/test")
 	public String deptApi() {
